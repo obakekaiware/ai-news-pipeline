@@ -2,6 +2,28 @@
 
 AIエンジニア目線で選んだ毎日のAIニュース（新しい順）
 
+## 2026-11-01
+
+### [C++製の軽量コーディングハーネス Prospero が登場（Prospero: A new coding harness for a more civilized age）](https://nullprogram.com/blog/2026/10/31/)
+- **日付**: 2026-10-31
+- **ソース**: Hacker News
+- **要約**:
+  1. Chris Wellons 氏が C++ と Dear ImGui 製のコーディングハーネス Prospero を公開した。
+  2. 全操作にタイムアウトを設け、プロセスツリー一括管理やSSH先へのエンジン展開に対応する。
+  3. モデルは llama.cpp や各社APIを自前で用意する方式で、無人の長時間実行の設計例として参考になる。
+
+---
+
+### [LLM で被害者の価値を査定する情報窃取マルウェア VOLTA（Appraisal by AI: Model-driven victim prioritization in the VOLTA infostealer）](https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/)
+- **日付**: 2026-10-31
+- **ソース**: Hacker News
+- **要約**:
+  1. Cisco Talos が、窃取データを LLM で分析し被害者の価値を格付けするマルウェア VOLTA を報告した。
+  2. OpenRouter 経由で Claude を呼び、拒否の定型句を検知すると Kimi K2、Gemini に順に切り替える。
+  3. LLM API の提供・利用側は、拒否回避のモデル切替を前提にした悪用対策を考える必要がある。
+
+---
+
 ## 2026-10-31
 
 ### [Cursor Marketplace 版 Claude Code 拡張にSSHバックドア（Backdoor in Claude Code for VS Code extension on the Cursor Marketplace）](https://phorion.io/blog/offical-claude-code-vsx-compromise/)
