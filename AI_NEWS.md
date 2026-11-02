@@ -2,6 +2,38 @@
 
 AIエンジニア目線で選んだ毎日のAIニュース（新しい順）
 
+## 2026-11-02
+
+### [JEPA でプラトン的表現仮説を証明・改善（Proving and improving the Platonic Representation Hypothesis with JEPAs）](https://arxiv.org/abs/2610.39302)
+- **日付**: 2026-10-29
+- **ソース**: Hacker News
+- **要約**:
+  1. Balestriero と LeCun が、異なるモダリティの表現が収束する仮説を JEPA で定理化した論文を公開した。
+  2. 別モダリティで学習した JEPA は回転を除き同じ表現になると証明し、次トークン予測は「悪いビュー」の JEPA と位置づけた。
+  3. 109M のテキスト JEPA が 72B までの LLM より画像エンコーダと整合しており、マルチモーダル設計の参考になる。
+
+---
+
+### [ダウンロードもロードもできるのに0問しか解けない。Ollama公式タグの量子化崖を自分のデータ再集計で確かめた](https://zenn.dev/matsushima_a/articles/day-033-quantized-llm-cliff)
+- **日付**: 2026-11-01
+- **ソース**: Zenn LLM
+- **要約**:
+  1. Ollama 公式305タグ中7タグが HumanEval+ でほぼ解けないとする論文を、公開ログの再集計と実機推論で検証した。
+  2. 原因はファイル破損でなく imatrix 無しの低bit量子化による崩壊で、imatrix 使用で q2_K が0問から106〜113問に回復した。
+  3. 4B以下の q2_K〜q3_K_L は要注意で、量子化を下げる際はタスクベースの動作確認を挟むべきだと分かる。
+
+---
+
+### [Anthropic、「Claude」の「Max 20x」を「Ultra」に名称変更 月200ドルで5時間ごとの利用制限を撤廃](https://www.itmedia.co.jp/news/article/2611/02/2000002777/)
+- **日付**: 2026-11-02
+- **ソース**: ITmedia AI+
+- **要約**:
+  1. Anthropic が個人向け Max プランを改称し、月100ドルを「Max」、月200ドルを「Ultra」とした（料金据え置き）。
+  2. Ultra は認証済みアカウントで5時間ごとの上限を撤廃し、週ごとに Pro の10倍の利用量を提供する（週上限は維持）。
+  3. 長時間エージェントを回す開発者は5時間枠を気にせず使え、週上限を基準に利用計画を立てる形になる。
+
+---
+
 ## 2026-11-01
 
 ### [C++製の軽量コーディングハーネス Prospero が登場（Prospero: A new coding harness for a more civilized age）](https://nullprogram.com/blog/2026/10/31/)
