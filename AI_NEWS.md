@@ -2,6 +2,38 @@
 
 AIエンジニア目線で選んだ毎日のAIニュース（新しい順）
 
+## 2026-10-31
+
+### [Cursor Marketplace 版 Claude Code 拡張にSSHバックドア（Backdoor in Claude Code for VS Code extension on the Cursor Marketplace）](https://phorion.io/blog/offical-claude-code-vsx-compromise/)
+- **日付**: 2026-10-30
+- **ソース**: Hacker News
+- **要約**:
+  1. Cursor Marketplace の Claude Code 拡張 2.1.312/2.1.313 に、永続的な SSH バックドアが仕込まれていたと Phorion が報告した。
+  2. extension.js 読み込み時に攻撃者の鍵を authorized_keys に追加し、逆SSHトンネルと LaunchAgent で常駐させる。
+  3. 拡張を消しても残るため、該当版を入れた人は鍵・常駐ファイルの削除と認証情報のローテーションが必要。
+
+---
+
+### [DMD蒸留を改良し数ステップ画像生成を高精度化（Intrinsic Distribution Matching）](https://huggingface.co/papers/2610.39633)
+- **日付**: 2026-10-29
+- **ソース**: Hugging Face Daily Papers
+- **要約**:
+  1. 1〜数ステップの text-to-image 生成向けに、DMD 蒸留を拡張した手法 IDM が提案された。
+  2. DMD の補正に加え、生成器の EMA コピーの特徴で平均と標準偏差を合わせ、外部エンコーダを不要にした。
+  3. Z-Image-Turbo 6B や Qwen-Image 20B で LoRA でも検証されており、高速生成モデルの蒸留に試す価値がある。
+
+---
+
+### [国産LLM「Sarashina」に初の「思考モデル」 ツール呼び出しやWeb検索性能が向上 APIで提供](https://www.itmedia.co.jp/aiplus/article/2610/30/2000002743/)
+- **日付**: 2026-10-30
+- **ソース**: ITmedia AI+
+- **要約**:
+  1. SB Intuitions が、フルスクラッチ開発の Sarashina 初の思考モデル「Sarashina3.2 mini thinking」を発表した。
+  2. 長文処理とエージェント性能を重視して学習し、思考の深さを low/medium/high から選べる。
+  3. 無料ベータの API で試せるため、日本語のツール呼び出しやWeb検索エージェントの選択肢として比較する価値がある。
+
+---
+
 ## 2026-10-30
 
 ### [Mistral が1兆パラメータ級 MoE「Mistral Large 4」の重みを公開（We're releasing the weights of Mistral Large 4）](https://mistral.ai/news/mistral-large-4-oss/)
