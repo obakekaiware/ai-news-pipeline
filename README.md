@@ -32,6 +32,7 @@ AIエンジニア目線で「面白い」ニュースを毎日自動で収集・
 | ② | 選定 | Claude（`prompts/02_select.md`） | `data/selected/{日付}.json` |
 | ③ | 3行要約 | Claude（`prompts/03_summarize.md`） | `data/summaries/{日付}.json` |
 | ③ | AI_NEWS.md へ追記 | `scripts/update_news.py` | `AI_NEWS.md` |
+| — | GitHub へ反映 | `git commit` / `git push` | `AI_NEWS.md` のみコミット |
 
 `scripts/run_daily.ps1` がこれらを順に実行する。失敗したステップで止まり、途中から再開できる。
 
@@ -65,7 +66,10 @@ powershell -ExecutionPolicy Bypass -File scripts\run_daily.ps1
 powershell -ExecutionPolicy Bypass -File scripts\run_daily.ps1 -Date 2026-10-02 -From select
 ```
 
-`-From` に指定できるステップ: `feeds` / `collect` / `merge` / `select` / `summarize` / `publish`
+`-From` に指定できるステップ: `feeds` / `collect` / `merge` / `select` / `summarize` / `publish` / `git`
+
+最後の `git` ステップでは `AI_NEWS.md` だけをコミットして `origin/main` に push する。
+事前に一度手動で `git push` し、GitHub の認証情報を Git Credential Manager に保存しておくこと（自動実行中は認証を求めない）。
 
 実行ログは `logs/{日付}.log` に追記される。
 

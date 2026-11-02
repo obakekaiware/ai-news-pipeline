@@ -139,9 +139,11 @@ AIエンジニア目線で「面白い」と思えるニュースを毎日自動
   - スクリプトが Python と `claude -p`（非対話モード）をステップ順に呼び出す。Claude はステップごとに別セッション。
   - `claude` コマンドが PATH に無ければ、VS Code 拡張機能に同梱の最新 `claude.exe` を自動で使う。
   - Claude の権限は `--permission-mode dontAsk` ＋ 許可ツール `Read, Glob, Grep, WebFetch, WebSearch, Edit(./data/**)` に限定する（`data/` 外への書き込みとコマンド実行は不可）。
+  - 最後のステップ（`git`）で `AI_NEWS.md` だけをコミット（メッセージ `news: {日付}`）し、GitHub（`origin/main`）へ push する。
+    変更が無ければコミットは省き、push だけ行う（前回失敗した分も送るため）。認証は Git Credential Manager に保存済みの情報を使い、入力は求めない。
   - 実行ログは `logs/{日付}.log` に追記する。失敗したステップで止まり、`-From <ステップ名>` で途中から再開できる。
   - 手動実行: `powershell -ExecutionPolicy Bypass -File scripts
-un_daily.ps1 [-Date YYYY-MM-DD] [-From feeds|collect|merge|select|summarize|publish]`
+un_daily.ps1 [-Date YYYY-MM-DD] [-From feeds|collect|merge|select|summarize|publish|git]`
   - PC が起動・ログインしていない時間帯は実行されない点に注意する。
 - 同じ日付で再実行した場合は、その日の見出しに重複なく追記する。
 - 取得に失敗したソースがあっても処理は止めず、取得できた分で続行する。

@@ -9,6 +9,7 @@
   4. claude -p  prompts/02_select.md      … ②選定
   5. claude -p  prompts/03_summarize.md   … ③要約（data/summaries に JSON を保存）
   6. python scripts/update_news.py        … ③要約（AI_NEWS.md の先頭に追記）
+  7. git commit / push                    … AI_NEWS.md を GitHub に反映
 
   どこかのステップが失敗したらそこで止める。ログは logs/{日付}.log に追記する。
 
@@ -20,7 +21,7 @@ param(
     # 対象日（既定: 今日の JST）
     [string]$Date = [System.TimeZoneInfo]::ConvertTimeBySystemTimeZoneId([DateTime]::UtcNow, 'Tokyo Standard Time').ToString('yyyy-MM-dd'),
     # 途中から再開するときのステップ名
-    [ValidateSet('feeds', 'collect', 'merge', 'select', 'summarize', 'publish')]
+    [ValidateSet('feeds', 'collect', 'merge', 'select', 'summarize', 'publish', 'git')]
     [string]$From = 'feeds',
     # claude.exe のパス（省略時は自動検出）
     [string]$ClaudePath = ''
@@ -58,7 +59,7 @@ function Find-Claude {
 }
 
 # 各ステップ（$From より前はスキップ）
-$Steps = 'feeds', 'collect', 'merge', 'select', 'summarize', 'publish'
+$Steps = 'feeds', 'collect', 'merge', 'select', 'summarize', 'publish', 'git'
 function Should-Run([string]$Step) { $Steps.IndexOf($Step) -ge $Steps.IndexOf($From) }
 
 # PowerShell 5.1 は外部コマンドの stderr 出力をエラー扱いするため、呼び出し中だけ Continue にして終了コードで判定する
@@ -85,6 +86,29 @@ function Invoke-ClaudeStep([string]$PromptFile) {
     $out, $code = $r.Out, $r.Code
     $out | ForEach-Object { Write-Log "  $_" }
     if ($code -ne 0) { throw "claude ($PromptFile) が失敗しました (exit $code)" }
+}
+
+function Invoke-Git([string[]]$GitArgs) {
+    $r = Invoke-Native { git @GitArgs }
+    $out, $code = $r.Out, $r.Code
+    $out | ForEach-Object { Write-Log "  $_" }
+    if ($code -ne 0) { throw "git $($GitArgs -join ' ') が失敗しました (exit $code)" }
+}
+
+# AI_NEWS.md だけをコミットして push する（他のファイルの変更は巻き込まない）
+function Publish-Git {
+    # 認証画面を出せない場合に待ち続けないよう、入力を求めずに失敗させる
+    $env:GIT_TERMINAL_PROMPT = '0'
+    $env:GCM_INTERACTIVE = 'never'
+    $r = Invoke-Native { git diff --quiet HEAD -- AI_NEWS.md }
+    if ($r.Code -eq 0) {
+        Write-Log '  AI_NEWS.md に変更なし（コミットしない）'
+    } else {
+        Invoke-Git @('add', '--', 'AI_NEWS.md')
+        Invoke-Git @('commit', '-m', "news: $Date", '--', 'AI_NEWS.md')
+    }
+    # 前回 push に失敗した分もここで送る
+    Invoke-Git @('push', 'origin', 'main')
 }
 
 function Assert-Output([string]$Path) {
@@ -124,6 +148,10 @@ try {
     if (Should-Run 'publish') {
         Write-Log '--- ③AI_NEWS.md へ追記 ---'
         Invoke-Python 'scripts/update_news.py'
+    }
+    if (Should-Run 'git') {
+        Write-Log '--- GitHub へ反映 ---'
+        Publish-Git
     }
     Write-Log '===== 正常終了 ====='
     exit 0
