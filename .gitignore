@@ -1,0 +1,16 @@
+# Claude Code 向けのメモ
+CLAUDE.md
+PROGRESS.md
+
+# 実行ログ（ローカルパスを含む）
+logs/
+
+# 日々の中間データ
+data/
+
+# Python
+__pycache__/
+*.pyc
+
+# Claude Code のローカル設定
+.claude/settings.local.json

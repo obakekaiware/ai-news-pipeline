@@ -1,0 +1,21 @@
+{
+  "window_hours": 24,
+  "sources": [
+    { "name": "OpenAI News",          "category": "公式ブログ",       "method": "feed", "url": "https://openai.com/news/rss.xml" },
+    { "name": "Google DeepMind Blog", "category": "公式ブログ",       "method": "feed", "url": "https://deepmind.google/blog/rss.xml" },
+    { "name": "Google AI Blog",       "category": "公式ブログ",       "method": "feed", "url": "https://blog.google/technology/ai/rss/" },
+    { "name": "Hugging Face Blog",    "category": "公式ブログ",       "method": "feed", "url": "https://huggingface.co/blog/feed.xml" },
+    { "name": "Anthropic News",       "category": "公式ブログ",       "method": "claude", "url": "https://www.anthropic.com/news" },
+    { "name": "Meta AI Blog",         "category": "公式ブログ",       "method": "claude", "url": "https://ai.meta.com/blog/" },
+
+    { "name": "Hugging Face Daily Papers", "category": "論文", "method": "hf_daily_papers", "url": "https://huggingface.co/api/daily_papers?limit=100", "max_items": 30 },
+
+    { "name": "Hacker News",     "category": "英語コミュニティ", "method": "hn_algolia", "url": "https://hn.algolia.com/api/v1/search_by_date", "min_points": 100 },
+    { "name": "GitHub Trending", "category": "英語コミュニティ", "method": "claude", "url": "https://github.com/trending?since=daily", "ranking": true },
+
+    { "name": "ITmedia AI+",   "category": "国内メディア", "method": "feed", "url": "https://rss.itmedia.co.jp/rss/2.0/aiplus.xml" },
+    { "name": "Zenn トレンド", "category": "国内メディア", "method": "feed", "url": "https://zenn.dev/feed", "ranking": true },
+    { "name": "Zenn LLM",      "category": "国内メディア", "method": "feed", "url": "https://zenn.dev/topics/llm/feed" },
+    { "name": "Qiita 人気記事", "category": "国内メディア", "method": "feed", "url": "https://qiita.com/popular-items/feed", "ranking": true }
+  ]
+}
