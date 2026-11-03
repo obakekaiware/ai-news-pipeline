@@ -2,6 +2,38 @@
 
 AIエンジニア目線で選んだ毎日のAIニュース（新しい順）
 
+## 2026-11-03
+
+### [LLM が重みを直接書き換えて Qwen を改善する「重み空間プログラミング」（Astra can read and write weights to improve Qwen）](https://rikiyat.github.io/blog/weight-space-programming/)
+- **日付**: 2026-11-02
+- **ソース**: Hacker News
+- **要約**:
+  1. MIT CSAIL の研究者が、GPT-6 Astra に NN の重みを直接読み書きさせる実験群を公開した。
+  2. 勾配を使わず Qwen3.5-0.8B の重み0.016%を編集し思考ループを抑え、MATH-500 を7.9%→48.1%に改善した。
+  3. 全実験ログと編集済みモデルが公開されており、Gemma 3 270M では効果が出なかった点も含め検証できる。
+
+---
+
+### [動画基盤モデルの事前知識で画像生成を統一する FrameForge（FrameForge: Harnessing Priors of Video Foundation Models for Unified Image Generation）](https://huggingface.co/papers/2610.36545)
+- **日付**: 2026-10-27
+- **ソース**: Hugging Face Daily Papers
+- **要約**:
+  1. 事前学習済み動画モデルを土台に、条件付き画像生成を1モデルで扱う手法 FrameForge が提案された。
+  2. 条件と目標画像の時間距離を RoPE エキスパートの動的選択（MoTE）で表し、中間状態を経る推論（CoTR）で変換する。
+  3. 被写体生成・Canny・画像編集を1つの動画モデルで扱えるとされ、動画モデルの画像タスク転用の参考になる。
+
+---
+
+### [音声・推論・ツール利用を統合したオープン音声モデル Apriel Voice 27B（Apriel Voice 27B Preview: An Open Model for Speech, Reasoning, and Tool Use）](https://huggingface.co/papers/2610.40738)
+- **日付**: 2026-10-29
+- **ソース**: Hugging Face Daily Papers
+- **要約**:
+  1. Gemma 4 26B-A4B を基に、音声を直接扱いツール呼び出しまで行う音声言語モデル Apriel Voice 27B Preview が発表された。
+  2. 2段階学習で音声入力を接続し、別の対話モデルを介さず応答とツール呼び出しを生成、テキスト・画像入力も保持する。
+  3. Speech-BFCL 81.13、平均レイテンシ1.91秒と報告されており、音声エージェントを1モデルで組む選択肢になる。
+
+---
+
 ## 2026-11-02
 
 ### [JEPA でプラトン的表現仮説を証明・改善（Proving and improving the Platonic Representation Hypothesis with JEPAs）](https://arxiv.org/abs/2610.39302)
