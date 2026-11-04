@@ -2,6 +2,38 @@
 
 AIエンジニア目線で選んだ毎日のAIニュース（新しい順）
 
+## 2026-11-04
+
+### [「Astra が重みを読み書きして Qwen を改善」は誤解を招くとの指摘（The 'Astra can read and write weights to improve Qwen' post is misleading）](https://honnibal.dev/blog/astra-read-write-misleading)
+- **日付**: 2026-11-03
+- **ソース**: Hacker News
+- **要約**:
+  1. spaCy 作者の Honnibal 氏が、Astra が重みを読み書きしたとする投稿は誤解を招くと批判した。
+  2. 生の重みだけを読む実験は17K〜172K重みの小規模網に限られ、Qwen の改善は Python とモデル実行に依存していた。
+  3. 重みを扱う能力を評価する際は、実験ごとにツールやモデル実行の有無を確かめる必要がある。
+
+---
+
+### [複数GPU並列で長尺動画を実時間生成する Wave Forcing（Wave Forcing: Towards Speed-of-Light Streaming Video Generation）](https://huggingface.co/papers/2611.00859)
+- **日付**: 2026-10-31
+- **ソース**: Hugging Face Daily Papers
+- **要約**:
+  1. Jin らが、長尺動画を連続出力するリアルタイム生成手法 Wave Forcing を発表した。
+  2. 段階的なノイズ除去とキャッシュ更新を複数レプリカへ分散し、H200 8基で end-to-end 134.8 FPS を報告した。
+  3. コードと1.3Bモデルが公開されており、並列実行による動画生成の高速化を手元で検証できる。
+
+---
+
+### [ISUCON2026 で優勝しました（当日編）](https://zenn.dev/luvtechno/articles/isucon2026-competition-day)
+- **日付**: 2026-11-02
+- **ソース**: Zenn トレンド
+- **要約**:
+  1. Kawasaki 氏が1人チームで ISUCON2026 に参加し、最終625,857点で優勝した記録を公開した。
+  2. Claude Code による完全自律型で、8:53のログイン後は入力0回のまま負荷走行を86回実行した。
+  3. 監査役の指摘の大半はスコアを下げたとあり、自律エージェントの監査設計を考える実例になる。
+
+---
+
 ## 2026-11-03
 
 ### [LLM が重みを直接書き換えて Qwen を改善する「重み空間プログラミング」（Astra can read and write weights to improve Qwen）](https://rikiyat.github.io/blog/weight-space-programming/)
