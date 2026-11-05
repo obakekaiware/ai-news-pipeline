@@ -2,6 +2,38 @@
 
 AIエンジニア目線で選んだ毎日のAIニュース（新しい順）
 
+## 2026-11-05
+
+### [Ripple-65B Preview: エージェント型コーディングで米国製オープンウェイト最高性能（Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding）](https://www.ricursive.com/ripple)
+- **日付**: 2026-11-04
+- **ソース**: Hacker News
+- **要約**:
+  1. Ricursive Intelligence が密な Transformer の Ripple-65B Preview を Hugging Face 等で公開した。
+  2. MoE を使わない80層構成と合成データでの RL により、TerminalBench 2.1 で80.52を記録した。
+  3. 同社比較では501BのBeamを上回るため、コーディング用途で小型モデルを評価する価値がある。
+
+---
+
+### [PrimeSim: 大規模な機体横断デモで学習する汎用世界モデルシミュレータ（PrimeSim: A Generalist World Model Simulator from Large-Scale Cross-Embodiment Demonstrations）](https://huggingface.co/papers/2611.04870)
+- **日付**: 2026-11-03
+- **ソース**: Hugging Face Daily Papers
+- **要約**:
+  1. Davies らが22プラットフォーム計30,110時間のデモで学習した世界モデル PrimeSim を発表した。
+  2. 行動条件付けの工夫、視点認識 attention、階層的時間メモリで長期生成の誤差累積を抑える。
+  3. 未学習の機体にも100〜200更新で適応するとされ、重みと学習コードの公開で検証できる。
+
+---
+
+### [大規模言語モデルの証明可能な推論の進展（Progress on provable inference for large language models）](https://www.anthropic.com/research/provable-inference)
+- **日付**: 2026-11-02
+- **ソース**: Hacker News
+- **要約**:
+  1. Anthropic が LLM 出力の生成元モデルを証明する FlashProve を Apache 2.0 で公開した。
+  2. zkSNARK で重みを隠して証明し、Llama 4 Maverick で約110 tokens/秒を実現、GPU 時間は約72倍となる。
+  3. 提供モデルの検証手段として試せるが、研究プロトタイプで文脈長は1,024トークンに限られる。
+
+---
+
 ## 2026-11-04
 
 ### [「Astra が重みを読み書きして Qwen を改善」は誤解を招くとの指摘（The 'Astra can read and write weights to improve Qwen' post is misleading）](https://honnibal.dev/blog/astra-read-write-misleading)
