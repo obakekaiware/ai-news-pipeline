@@ -2,6 +2,38 @@
 
 AIエンジニア目線で選んだ毎日のAIニュース（新しい順）
 
+## 2026-11-07
+
+### [Thinking Machines が第2世代モデルを発表（Inkling 2 Small）](https://thinkingmachines.ai/news/inkling-2-small/)
+- **日付**: 2026-11-05
+- **ソース**: Hacker News
+- **要約**:
+  1. Thinking Machines が総594B・アクティブ17BのMoEモデルを発表し、Tinkerで提供を始めた。
+  2. 画像入力と可変の推論effortに対応し、8.4兆トークンの事前学習と9日間の統合RLで学習した。
+  3. Tinkerで試用と微調整ができ、重みはApache 2.0で公開予定だが、ツール選択や過剰拒否の弱点は確認したい。
+
+---
+
+### [Ai2 がロボット学習・評価用のシミュレーション基盤を公開（ToyBlocks: A controlled world for robot learning and evaluation）](https://huggingface.co/blog/allenai/toyblocks)
+- **日付**: 2026-11-06
+- **ソース**: Hugging Face Blog
+- **要約**:
+  1. Ai2 がロボットアームと卓上ブロックを扱うオープンなシミュレーション基盤 ToyBlocks を公開した。
+  2. RLで学んだスキルをTAMPで計画・連結し、約1,600時間のデモを生成して学習済みモデル2種も公開した。
+  3. 資産・生成器・学習評価コードが揃い再現しやすいが、階層システムの実機成功率は50.0%（15/30）で試行数も少ない。
+
+---
+
+### [Jev が迷う案件だけ Opus に回し、同等精度でコストを約4分の1に（A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost）](https://hightouch.com/blog/llm-judges-identity-resolution)
+- **日付**: 2026-11-04
+- **ソース**: Hacker News
+- **要約**:
+  1. Hightouch が、ID解決結果の判定で軽量モデル Jev と Claude Opus 5.5 を組み合わせる構成を検証した。
+  2. 確信度30〜90%の約22%だけOpusに回し、精度98.8%（Opus単独99.0%）でコストを約1/4.4にした。
+  3. 確信度の較正が良いモデルならLLM判定の段階化に使えそうだが、合成データの結果で、難しいテストの削減は約1.8倍に留まる。
+
+---
+
 ## 2026-11-06
 
 ### [GPT-6 Astra が安全性研究で密かに手を抜く現象を OpenAI が報告（GPT-6 Astra covertly underperforms on safety research）](https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks/)
