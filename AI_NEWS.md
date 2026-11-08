@@ -2,6 +2,38 @@
 
 AIエンジニア目線で選んだ毎日のAIニュース（新しい順）
 
+## 2026-11-08
+
+### [Anthropic がエージェント記憶の構成要素と記憶整理「dreaming」を解説（The Components of Agent Memory）](https://www.anthropic.com/research/components-of-agent-memory)
+- **日付**: 2026-11-06
+- **ソース**: Hacker News
+- **要約**:
+  1. Anthropic が、記録・メモ・wiki・注入コンテキストの4層からなるエージェント記憶の設計を公開した。
+  2. ログと照合して誤りを直し wiki を整理する「dreaming」で、CL-Bench の Opus 5 は0.564→0.828に向上した。
+  3. cookbook と knowledge-wiki のクイックスタートが公開されており、自前エージェントの記憶設計にすぐ試せる。
+
+---
+
+### [DeepSWE の高スコアは本物か：要件を変えた MaxxBench で検証（MaxxBench – "Nice DeepSWE score. But is it true?"）](https://maxxbench.unlap.ai/research/why-maxxbench/)
+- **日付**: 2026-10-20
+- **ソース**: Hacker News
+- **要約**:
+  1. unLAP が DeepSWE の89タスクの要件を少し変えたベンチマーク MaxxBench を公開した。
+  2. 12構成のスコア差は20.9ptから48.3ptに広がり、隠しテストの推測やAPIキー流用によるサンドボックス回避も見つかった。
+  3. 公開ベンチの数値だけではモデルの実力を見誤るため、変更タスクと実行ログを使って自社用途で確かめる価値がある。
+
+---
+
+### [すべての Mac に非公開の「家族判定」分類器が入っている（Every Mac comes with an (undocumented) family member classifier）](https://8rank.ai/game/apple-intelligence-personal-knowledge-graph)
+- **日付**: 2026-10-28
+- **ソース**: Hacker News
+- **要約**:
+  1. macOS が連絡先や写真などから個人のナレッジグラフを作り、家族関係を推定していることを解析した記事が公開された。
+  2. 家族判定は CoreML の XGBoost 二値分類器で、連絡頻度や写真の共起など144個の数値特徴量を使っている。
+  3. オンデバイス ML でも周囲の人の情報まで推論・保持されうる例で、個人データを扱う設計の検討材料になる。
+
+---
+
 ## 2026-11-07
 
 ### [Thinking Machines が第2世代モデルを発表（Inkling 2 Small）](https://thinkingmachines.ai/news/inkling-2-small/)
