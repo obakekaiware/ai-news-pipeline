@@ -2,6 +2,28 @@
 
 AIエンジニア目線で選んだ毎日のAIニュース（新しい順）
 
+## 2026-11-09
+
+### [284BのDeepSeekをGPUなし・64GB RAMで動かすOSS（Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU）](https://github.com/synchopate/llama-modchip)
+- **日付**: 2026-11-08（HN投稿日）
+- **ソース**: Hacker News
+- **要約**:
+  1. llama.cpp向けのパッチと量子化ツール群llama-modchipが、Apache-2.0で公開された。
+  2. DeepSeek-V4-Flash（284B MoE）を平均1.71bpwに圧縮し、Ryzen 9 9955HX単体でデコード約9〜10tok/sとしている。
+  3. 64GBの手元PCで巨大MoEを試せる手段だが、速度はREADMEの自己計測で、未パッチのllama.cppでは読めない点に注意。
+
+---
+
+### [Claude Codeをやめてミニマルなハーネス「Pi」へ移行した理由（Goodbye Claude, hello Pi）](https://caleb.software/posts/claude-to-pi.html)
+- **日付**: 2026-09-21
+- **ソース**: Hacker News
+- **要約**:
+  1. 1年以上Claude Codeを使ってきた筆者が、メインのコーディングハーネスをOSSのPiに切り替えたと報告した。
+  2. 今年244回のリリースの3/4以上がシステムプロンプトやツール説明を変更し、Bashツール説明は約3,000トークンと指摘する。
+  3. ハーネスの頻繁な変更とプロンプトのオーバーヘッドが、エージェントの挙動やコストに効くことを考える材料になる。
+
+---
+
 ## 2026-11-08
 
 ### [Anthropic がエージェント記憶の構成要素と記憶整理「dreaming」を解説（The Components of Agent Memory）](https://www.anthropic.com/research/components-of-agent-memory)
