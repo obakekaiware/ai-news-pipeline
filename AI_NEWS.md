@@ -2,6 +2,38 @@
 
 AIエンジニア目線で選んだ毎日のAIニュース（新しい順）
 
+## 2026-11-10
+
+### [Anthropic が Claude Fable 5.2 と Mythos 5.2 を発表（Introducing Claude Fable 5.2 and Claude Mythos 5.2）](https://www.anthropic.com/claude-fable-and-mythos-5-2)
+- **日付**: 2026-11-09
+- **ソース**: Hacker News
+- **要約**:
+  1. Anthropic が同じ基盤モデルの Claude Fable 5.2（一般向け）と Mythos 5.2（認定組織向け）を公開した。
+  2. FrontierSWE v2 で 69.9% と Opus 5.5 を上回り、出力は前版より最大30%速く、最大2.5倍速い Fast mode も追加された。
+  3. API（claude-fable-5-2）で入力$8・出力$40/100万トークンで使え、難問だけ Fable に相談する Advisor 構成も試せる。
+
+---
+
+### [任意のシーンに対応するフィードフォワード3DGSのためのガウシアン間隔正規化（SplatAnything: Gaussian Spacing Normalization for Feed-forward 3DGS across Arbitrary Scenes）](https://huggingface.co/papers/2611.08264)
+- **日付**: 2026-11-05
+- **ソース**: Hugging Face Daily Papers
+- **要約**:
+  1. フィードフォワード型3DGSを任意のシーンへ汎化させる手法 SplatAnything が提案された。
+  2. 放射距離ではなく、隣接ガウシアン間隔の頑健な統計量で正規化する GSNorm により、スケール教師のずれを解消する。
+  3. シーン規模や視点が大きく変わる条件で強いとされ、多様な撮影環境で3D再構成を使う際に参考になる。
+
+---
+
+### [出力を後から書き換えない安定プレフィックス型ストリーミング音声認識（Confucius4-R2T2: A Stable-Prefix Streaming ASR Model for Real Real-Time Transcription）](https://huggingface.co/papers/2611.06043)
+- **日付**: 2026-11-04
+- **ソース**: Hugging Face Daily Papers
+- **要約**:
+  1. NetEase Youdao が、過去の出力を書き換えないストリーミング音声認識モデル Confucius4-R2T2 を公開した。
+  2. Qwen3-ASR-1.7B を構造を変えずに中英1,500時間で後学習し、新概念「Longest Stable Prefix」で学習する。
+  3. 重みとコードが公開されており、トークンを逐次処理する音声エージェントや同時翻訳の誤動作を減らす用途で試せる。
+
+---
+
 ## 2026-11-09
 
 ### [284BのDeepSeekをGPUなし・64GB RAMで動かすOSS（Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU）](https://github.com/synchopate/llama-modchip)
