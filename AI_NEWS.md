@@ -2,6 +2,38 @@
 
 AIエンジニア目線で選んだ毎日のAIニュース（新しい順）
 
+## 2026-11-11
+
+### [AlphaProof Code が Signal の暗号実装を Lean で形式検証（Introducing AlphaProof Code: a breakthrough in verifying complex software at depth）](https://deepmind.google/blog/introducing-alphaproof-code/)
+- **日付**: 2026-11-10
+- **ソース**: Google DeepMind Blog
+- **要約**:
+  1. Google DeepMind が形式検証エージェント AlphaProof Code を発表し、Signal プロトコル実装の安全性を検証した。
+  2. Gemini Carbon のエージェントが Lean で600万行超の証明を書き、設計でなくコンパイル後のコードを4週間で検証した。
+  3. 人手確認は約1%で済み、検証成果物も公開されたため、エージェントによる形式検証の実用性を確かめる材料になる。
+
+---
+
+### [Gemini 4 Carbon が API で一般提供開始（Gemini 4 Carbon is now available）](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/)
+- **日付**: 2026-11-10
+- **ソース**: Hacker News
+- **要約**:
+  1. Google が最上位モデル Gemini 4 Carbon を AI Studio 等で提供開始し、11月末まで入力$2・出力$10/100万トークン。
+  2. 検証ループを長く回す設計で CursorBench 4.0 等で首位、1プロンプトで複数エージェントを束ねる /swarm もプレビュー提供。
+  3. 複雑なコーディングやデバッグ向けで、12月以降は価格が倍になるため、導入判断は導入価格の期間中の評価が有効。
+
+---
+
+### [異種の触覚センサを共通表現で扱い器用な操作を学習（Learning Heterogeneous Tactile Representation for General Dexterous Manipulation）](https://huggingface.co/papers/2611.12806)
+- **日付**: 2026-11-09
+- **ソース**: Hugging Face Daily Papers
+- **要約**:
+  1. 種類の異なる触覚センサを1つの表現で扱う触覚基盤モデル LingBot-Touch を提案した論文が公開された。
+  2. ピエゾ抵抗・磁気・画像式センサを共通の触覚トークンにし、拡散ポリシーや π0.5 等の VLA に組み込める。
+  3. センサごとに作り直さず既存ロボット方策に触覚を足せるため、接触の多い操作タスクの研究で参考になる。
+
+---
+
 ## 2026-11-10
 
 ### [Anthropic が Claude Fable 5.2 と Mythos 5.2 を発表（Introducing Claude Fable 5.2 and Claude Mythos 5.2）](https://www.anthropic.com/claude-fable-and-mythos-5-2)
