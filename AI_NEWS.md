@@ -2,6 +2,38 @@
 
 AIエンジニア目線で選んだ毎日のAIニュース（新しい順）
 
+## 2026-11-12
+
+### [Qwen4-Max Preview公開（AlibabaのQwen4最新モデル）](https://x.com/Alibaba_Qwen/status/2120335993643684315)
+- **日付**: 2026-11-11
+- **ソース**: Qwen
+- **要約**:
+  1. AlibabaのQwenチームが次世代Qwen4系列の初プレビュー版Qwen4-Maxを公開した。
+  2. 1Mトークンのコンテキストと最大39万3216トークンの出力に対応し、画像・動画入力とツール呼び出しを扱える。
+  3. Alibaba Token Planで11月25日まで試用でき、長文脈・マルチモーダル用途の実務検証に向く。
+
+---
+
+### [高速検索でより良く効率的なRAGを実現（Faster Retrieval for Better, More Efficient RAG）](https://machinelearning.apple.com/research/faster-retrieval)
+- **日付**: 2026-11-05
+- **ソース**: Hacker News
+- **要約**:
+  1. AppleのML研究チームがRAG検索（MIPS）を高速化する手法SupportNetとKeyNetをICML 2026で発表した。
+  2. クエリ適応型のクラスタ判定とキー書き換えにより、99%再現率を保ちつつ検索を最大8倍高速化した。
+  3. データベースの0.001%スキャンで89~97%の再現率を実現でき、RAGのレイテンシ改善にすぐ応用できる。
+
+---
+
+### [エージェント型ロボット操作のための文脈内学習（World In-Context Learning for Agentic Robot Manipulation）](https://huggingface.co/papers/2611.12885)
+- **日付**: 2026-11-09
+- **ソース**: Hugging Face Daily Papers
+- **要約**:
+  1. 研究チームがロボット操作向けの文脈内学習手法World-ICL（WICL）を提案した。
+  2. 凍結モデルが1つの実演をシミュレータでリハーサルし、フィードバックを文脈に書き込むことで重み更新なしにスキルを獲得する。
+  3. RoboTwin 2.0の全50タスクで平均成功率83.4%を達成し最良の訓練方策を20ポイント以上上回った。
+
+---
+
 ## 2026-11-11
 
 ### [AlphaProof Code が Signal の暗号実装を Lean で形式検証（Introducing AlphaProof Code: a breakthrough in verifying complex software at depth）](https://deepmind.google/blog/introducing-alphaproof-code/)
