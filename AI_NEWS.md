@@ -2,6 +2,38 @@
 
 AIエンジニア目線で選んだ毎日のAIニュース（新しい順）
 
+## 2026-11-13
+
+### [Gemini 4 Hydrogen登場（Introducing Gemini 4 Hydrogen）](https://deepmind.google/blog/introducing-gemini-4-hydrogen/)
+- **日付**: 2026-11-12
+- **ソース**: Google DeepMind Blog
+- **要約**:
+  1. Googleが日常コーディング・エージェント向け高速モデル「Gemini 4 Hydrogen」を発表した。
+  2. 前世代Gemini 3.8 Flash比で2.5倍高速化し、4段階の推論深さ(low/medium/high/xhigh)を選べる。
+  3. Search・Workspace・Antigravity等に即日展開され、エージェント実務で速度とコストを両立できる。
+
+---
+
+### [Apple純正フレームワークでClaude/Geminiも統合可能に（Foundation Models framework）](https://developer.apple.com/foundation-models-framework/)
+- **日付**: 2026-11-13（HN投稿日）
+- **ソース**: Hacker News
+- **要約**:
+  1. AppleがmacOS 27向け新フレームワーク「Foundation Models」を公開し、Claude・Geminiにも対応した。
+  2. Dynamic Profilesで会話履歴を保持しつつモデル・温度・推論レベルを動的に切り替え、fm CLIも使える。
+  3. 統一Swift APIで複数モデルを切替できるようになり、エージェント実装やプロトタイピングが容易になる。
+
+---
+
+### [リアルタイムMPC向けGPU加速QPソルバー「FAME-QP」（FAME-QP: A GPU-Accelerated Quadratic-Programming Solver for Real-Time Model Predictive Control）](https://huggingface.co/papers/2611.13766)
+- **日付**: 2026-11-12（Daily Papers掲載日）
+- **ソース**: Hugging Face Daily Papers
+- **要約**:
+  1. 線形モデル予測制御(MPC)の二次計画問題を解くGPU加速ソルバー「FAME-QP」が提案された。
+  2. 制約依存の演算子表現とCUDA Graphsを組み合わせ、問題に応じて実行設定を自動選択する。
+  3. 競合GPUソルバーより低レイテンシで精度を維持し、人型ロボットや飛行体のリアルタイム制御に試す価値がある。
+
+---
+
 ## 2026-11-12
 
 ### [Qwen4-Max Preview公開（AlibabaのQwen4最新モデル）](https://x.com/Alibaba_Qwen/status/2120335993643684315)
