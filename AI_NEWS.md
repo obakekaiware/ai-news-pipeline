@@ -2,6 +2,38 @@
 
 AIエンジニア目線で選んだ毎日のAIニュース（新しい順）
 
+## 2026-11-15
+
+### [llama.cpp 1.0入門 ― ローカルLLMの心臓部がついに安定版に。手元のPCでAIを動かすまでを実測する](https://zenn.dev/ikesita/articles/28574a5a6f6833)
+- **日付**: 2026-11-15
+- **ソース**: Zenn LLM
+- **要約**:
+  1. Zennの記事が、ローカルLLM推論エンジンllama.cpp v1.0.0の安定版化を実機検証した。
+  2. セマンティックバージョニング導入やFP8 KVキャッシュ対応等でAPIの安定性を高めた。
+  3. CPU実行でもQwen3.5-0.8B等が動作し、ローカルLLM基盤の成熟度を見極める参考になる。
+
+---
+
+### [DGX2台でGLM-5.3をvLLM配信し607.8 tok/sを達成（Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM）](https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/)
+- **日付**: 2026-11-13
+- **ソース**: Hacker News
+- **要約**:
+  1. NVIDIA公式ブログが、GLM-5.3を2台のDGXでvLLM分散提供する構成を解説した。
+  2. ConnectX-8のRDMA接続とテンソル並列(TP=2)、MTPやFP8 KVキャッシュで607.8 tok/sを実現した。
+  3. 単一GPUに載らない大型MoEモデルを複数ノードで配信する際の構成設計の参考になる。
+
+---
+
+### [ゲーム映像をAI超解像で120FPS化するOSSプレイヤー「Veyra」（Likely7/Veyra-NRVideo）](https://github.com/Likely7/Veyra-NRVideo)
+- **日付**: 不明
+- **ソース**: GitHub Trending
+- **要約**:
+  1. GitHub Trendingで、AI超解像とフレーム補完でゲーム映像を強化するOSS「Veyra」が注目された。
+  2. RTX Video SRやDLSS 5等の既存モデルをレイヤー化し、超解像・ノイズ除去・HDRを統合処理する。
+  3. Windows/DirectX12向けの実例として、ローカル映像強化パイプラインの実装参考になる。
+
+---
+
 ## 2026-11-13
 
 ### [Gemini 4 Hydrogen登場（Introducing Gemini 4 Hydrogen）](https://deepmind.google/blog/introducing-gemini-4-hydrogen/)
