@@ -2,6 +2,38 @@
 
 AIエンジニア目線で選んだ毎日のAIニュース（新しい順）
 
+## 2026-11-16
+
+### [格子上で標準模型を定義する一歩（A step toward defining the Standard Model on a lattice）](https://openai.com/index/step-toward-defining-the-standard-model)
+- **日付**: 2026-11-15
+- **ソース**: OpenAI News
+- **要約**:
+  1. OpenAIの物理学者が、GPT-6 Astraと共に格子上で標準模型を定義する候補案を発表した。
+  2. 弱い力の左右非対称性に伴う格子上の位相問題を、Astraが証明構築を主導して解消した。
+  3. 25年以上未解決だった問題で、AIが基礎物理学の証明作業を主導できることを示した。
+
+---
+
+### [OpenAI、AIエージェントが代わりに支払う「ChatGPT Wallet」 カード番号は渡さず、購入ごとに生体認証](https://www.itmedia.co.jp/news/article/2611/16/2000003208/)
+- **日付**: 2026-11-16
+- **ソース**: ITmedia AI+
+- **要約**:
+  1. OpenAIは、AIエージェント「dot」が決済を代行する「ChatGPT Wallet」を発表した。
+  2. 実カード番号は渡さず決済トークンを発行し、購入ごとに生体認証で承認する仕組み。
+  3. エージェント商取引の安全な実装例として、決済トークン方式は実務上参考になる。
+
+---
+
+### [Fireworks AI のセキュリティインシデントについて調べてみた — 何が起き、どこに影響したのか](https://zenn.dev/pollenjp/articles/2026-11-10-fireworks-ai-incident)
+- **日付**: 2026-11-16
+- **ソース**: Zenn LLM
+- **要約**:
+  1. LLM推論基盤Fireworks AIで2回の不正侵入が発生し、顧客の第三者API鍵などが流出した。
+  2. 評価ジョブに預けた鍵は削除だけでは無効化されず、発行元での再発行が必要と判明した。
+  3. サードパーティAPIを中継利用する際は、鍵の管理・無効化手順を見直す教訓になる。
+
+---
+
 ## 2026-11-15
 
 ### [llama.cpp 1.0入門 ― ローカルLLMの心臓部がついに安定版に。手元のPCでAIを動かすまでを実測する](https://zenn.dev/ikesita/articles/28574a5a6f6833)
