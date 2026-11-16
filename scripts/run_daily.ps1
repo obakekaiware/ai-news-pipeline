@@ -69,14 +69,29 @@ function Invoke-Native([scriptblock]$Block) {
     return @{ Out = $out; Code = $LASTEXITCODE }
 }
 
+# PATH 上の最初の python が 3.10 未満のこともあるため（例: Python38 が PATH の先頭に入った）、3.10 以上のものを選ぶ
+function Find-Python {
+    $candidates = @(Get-Command python -All -CommandType Application -ErrorAction SilentlyContinue | ForEach-Object { $_.Source }) +
+        @(Get-ChildItem "$env:LOCALAPPDATA\Programs\Python\Python3*\python.exe" -ErrorAction SilentlyContinue |
+            Sort-Object { [int]($_.Directory.Name -replace '\D', '') } -Descending | ForEach-Object { $_.FullName })
+    foreach ($exe in ($candidates | Select-Object -Unique)) {
+        if ($exe -like '*\WindowsApps\*') { continue }  # ストアのエイリアスは除外
+        $r = Invoke-Native { & $exe -c 'import sys; sys.exit(0 if sys.version_info >= (3, 10) else 1)' }
+        if ($r.Code -eq 0) { return $exe }
+    }
+    throw 'Python 3.10 以上が見つかりません。'
+}
+
 function Invoke-Python([string]$Script) {
-    $r = Invoke-Native { python $Script --date $Date }
+    if (-not $script:PythonExe) { $script:PythonExe = Find-Python; Write-Log "python: $script:PythonExe" }
+    $r = Invoke-Native { & $script:PythonExe $Script --date $Date }
     $out, $code = $r.Out, $r.Code
     $out | ForEach-Object { Write-Log "  $_" }
     if ($code -ne 0) { throw "$Script が失敗しました (exit $code)" }
 }
 
 # Claude に許可するツール: 読み取り・Web 取得・検索と、data/ 配下への書き込みのみ
+$script:PythonExe = ''
 $AllowedTools = 'Read,Glob,Grep,WebFetch,WebSearch,Edit(./data/**)'
 
 function Invoke-ClaudeStep([string]$PromptFile) {
