@@ -2,6 +2,38 @@
 
 AIエンジニア目線で選んだ毎日のAIニュース（新しい順）
 
+## 2026-11-17
+
+### [Qwen4-Maxが正式リリース（Qwen4-Max）](https://qwen.ai/blog?id=qwen4-max)
+- **日付**: 2026-11-16（HN投稿日）
+- **ソース**: Hacker News
+- **要約**:
+  1. Qwenチームが大規模言語モデル「Qwen4-Max」を正式リリースした。
+  2. 推論effortをnone/low/high/xhighの4段階で選べ、noneで推論を完全に無効化できる。
+  3. Artificial Analysis調査では平均コストが$3.27で、effort設定でコストと精度を調整しながら試せる。
+
+---
+
+### [エージェント型ロボティクスの新時代を展望（Envisioning Agentic Robotics: A New Era of Robotic Systems）](https://huggingface.co/papers/2611.18359)
+- **日付**: 2026-11-13
+- **ソース**: Hugging Face Daily Papers
+- **要約**:
+  1. GPT-6 Astraの登場を機に、基盤モデルと具現化ハーネスで動く「agentic robotics」を論じる展望論文が発表された。
+  2. 提案するRoboDojo評価では、同一タスクでもハーネスやプロトコルの違いで成功率が22%〜85%と大きく変動すると指摘。
+  3. 評価条件(観察・予算・デモ)の非開示が比較を難しくしており、エージェント型ロボティクス評価の透明性を考える材料になる。
+
+---
+
+### [画面操作で長時間プレイするゲームエージェント「Gamer」（Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent）](https://huggingface.co/papers/2611.18397)
+- **日付**: 2026-11-13
+- **ソース**: Hugging Face Daily Papers
+- **要約**:
+  1. 画面ピクセルを入力しキーボード・マウス操作を出力する汎用エージェント「Gamer」が発表された。
+  2. メモリ圧縮でロールアウトを分割するTA-GRPOと専用推論エンジンStreaming-vLLMで長時間タスクに対応。
+  3. Honkai: Star Railでは指示調整後に成功率が72.2%から80%に向上し、画面操作エージェント開発の参考になる。
+
+---
+
 ## 2026-11-16
 
 ### [格子上で標準模型を定義する一歩（A step toward defining the Standard Model on a lattice）](https://openai.com/index/step-toward-defining-the-standard-model)
