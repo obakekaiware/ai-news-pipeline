@@ -2,6 +2,38 @@
 
 AIエンジニア目線で選んだ毎日のAIニュース（新しい順）
 
+## 2026-11-18
+
+### [OpenAIがGPT-6.2 AstraとSolを発表（Introducing GPT-6.2 Astra and Sol）](https://openai.com/index/introducing-gpt-6-2-astra-sol)
+- **日付**: 2026-11-17
+- **ソース**: OpenAI News
+- **要約**:
+  1. OpenAIが新モデル「GPT-6.2 Astra」と「Sol」をChatGPT Work・Codex・APIで公開した。
+  2. Astraは専門タスク評価で前世代を上回りコストは3分の1未満、Solも同等性能を低コストで提供する。
+  3. API料金も引き下げられ、高性能モデルを低コストで実務にすぐ試せる。
+
+---
+
+### [ツール実行の許可と無害化処理を分離するSPILLWAY（SPILLWAY: Separating Target Admission from Sanitization to Defend Tool-Using Agents against Prompt Injection）](https://huggingface.co/papers/2611.07222)
+- **日付**: 2026-11-04
+- **ソース**: Hugging Face Daily Papers
+- **要約**:
+  1. 研究者らがツール使用エージェントをプロンプトインジェクションから守る手法SPILLWAYを提案した。
+  2. ツール出力の型付きフィールドのみを許可し、指示らしき領域は固定ルールで事前削除する。
+  3. 強化学習ベースの攻撃でも成功率0.005まで抑えられ、エージェントのインジェクション対策に活用できる。
+
+---
+
+### [VLAモデルを552B規模にスケールするScaleVLA（ScaleVLA: Scaling Vision-Language-Action Models to 552 Billion Parameters）](https://huggingface.co/papers/2611.21607)
+- **日付**: 2026-11-16
+- **ソース**: Hugging Face Daily Papers
+- **要約**:
+  1. 研究者らが552Bパラメータの視覚言語行動（VLA）モデルScaleVLAを開発した。
+  2. 552BのDeepSeek-V4.1-Flashを行動拡散変換器に接続し、わずか10デモで200億パラメータ版を上回った。
+  3. 実世界の精密操作タスクで成功率が40%から90%に向上し、大規模VLMをロボット基盤に使う価値を示す。
+
+---
+
 ## 2026-11-17
 
 ### [Qwen4-Maxが正式リリース（Qwen4-Max）](https://qwen.ai/blog?id=qwen4-max)
