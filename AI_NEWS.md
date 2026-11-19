@@ -2,6 +2,38 @@
 
 AIエンジニア目線で選んだ毎日のAIニュース（新しい順）
 
+## 2026-11-19
+
+### [Gemini 4 Neon登場、コーディング性能とコスト効率を両立（Introducing Gemini 4 Neon）](https://deepmind.google/blog/introducing-gemini-4-neon/)
+- **日付**: 2026-11-18
+- **ソース**: Google DeepMind Blog
+- **要約**:
+  1. Google DeepMindが新モデル「Gemini 4 Neon」を発表し、AI Studioなどで利用可能にした。
+  2. コーディングエージェント指標で首位となり、キャッシュ入力トークン料金を95%割引する価格設定を採用した。
+  3. コーディングエージェント用途で首位の実力を持つため、実務での試用価値が高いモデルといえる。
+
+---
+
+### [Genie 4公開、対話で環境を編集できる世界モデルが登場（Genie 4 is now available）](https://deepmind.google/blog/genie-4-is-now-available/)
+- **日付**: 2026-11-18
+- **ソース**: Google DeepMind Blog
+- **要約**:
+  1. Google DeepMindが世界モデル「Genie 4」を公開し、Google AI Ultra会員から利用可能になった。
+  2. テキストプロンプトでセッション中に天候やキャラクターを編集でき、場面に応じた音声も自動生成される。
+  3. リアルタイム編集可能な世界モデルは、インタラクティブなシミュレーション開発の新たな土台になり得る。
+
+---
+
+### [推論コストを345分の1に抑える新手法「Energy-Based Reasoners」（Energy-Based Reasoners: 385x more efficient inference）](https://energy-based-reasoners.github.io/)
+- **日付**: 2026-11-18（HN投稿日）
+- **ソース**: Hacker News
+- **要約**:
+  1. 潜在推論状態にエネルギー関数を学習する新手法「Energy-Based Reasoners」が論文・コードとともに公開された。
+  2. 勾配降下でエネルギーを最小化し解を探索、Sudoku-Extremeで次点手法比345分の1のFLOPsで同精度を達成した。
+  3. わずか1.8Mパラメータで高精度を達成しており、小規模モデルでの推論効率化手法として試す価値がある。
+
+---
+
 ## 2026-11-18
 
 ### [OpenAIがGPT-6.2 AstraとSolを発表（Introducing GPT-6.2 Astra and Sol）](https://openai.com/index/introducing-gpt-6-2-astra-sol)
