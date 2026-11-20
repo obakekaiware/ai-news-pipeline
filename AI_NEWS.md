@@ -2,6 +2,38 @@
 
 AIエンジニア目線で選んだ毎日のAIニュース（新しい順）
 
+## 2026-11-20
+
+### [Claudeが量子重力理論の未解決問題2件を解決（Claude solves two open problems in the physics of black holes）](https://www.anthropic.com/research/claude-black-hole-physics)
+- **日付**: 2026-11-17
+- **ソース**: Hacker News
+- **要約**:
+  1. Anthropicは、Claude Fable 5.2が量子重力理論の未解決問題2件を解いたと発表した。
+  2. 並列実行する複数エージェントがホーキング・ページ転移を検証し、黒洞質量上限の公式Λ≈9.1266を導出した。
+  3. 数学的難問にAIが新たな洞察を加えた例で、研究支援AIの可能性を示す事例として注目に値する。
+
+---
+
+### [GeminiのAPIに「Tool Retrieval」機能を追加（Introducing Tool Retrieval in the Gemini API）](https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/)
+- **日付**: 2026-11-19
+- **ソース**: Google AI Blog
+- **要約**:
+  1. Googleは、Gemini APIのInteractions APIに「Tool Retrieval」をプレビュー公開した。
+  2. tool_searchとdefer_loadingで、パラメータスキーマを必要時のみ読み込みトークンと遅延を削減する。
+  3. 数百のツールを扱うエージェント構築でコンテキスト圧迫を抑えられ、実装に組み込んで試す価値がある。
+
+---
+
+### [単一フォワードパスで高品質画像生成を実現する「Jeveration」（Jeveration: System One Models Now Generate）](https://huggingface.co/papers/2611.24738)
+- **日付**: 2026-11-18
+- **ソース**: Hugging Face Daily Papers
+- **要約**:
+  1. 研究チームは、単一フォワードパスで高品質画像を生成する手法「Jeveration」を提案した。
+  2. frozen VLMの視覚知識を再利用し、共有ランダム状態で並列予測を整合させ画像コード分布を学習する。
+  3. テキストと画像生成を同一アーキテクチャで高速に扱える手法で、System One系モデルの応用範囲拡大に注目できる。
+
+---
+
 ## 2026-11-19
 
 ### [Gemini 4 Neon登場、コーディング性能とコスト効率を両立（Introducing Gemini 4 Neon）](https://deepmind.google/blog/introducing-gemini-4-neon/)
