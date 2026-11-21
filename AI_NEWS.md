@@ -2,6 +2,38 @@
 
 AIエンジニア目線で選んだ毎日のAIニュース（新しい順）
 
+## 2026-11-21
+
+### [Thinking Machines Labの軽量新モデル「Inkling 2 Mini」公開（Inkling 2 Mini）](https://thinkingmachines.ai/news/inkling-2-mini/)
+- **日付**: 2026-11-20
+- **ソース**: Hacker News
+- **要約**:
+  1. Thinking Machines Labが軽量新モデル「Inkling 2 Mini」を公開した。
+  2. 中央12層を3回ループさせる構造で総26.4B中有効3.4Bの省パラメータを実現。
+  3. SWE-bench Pro v2で77.9%を記録、重み公開済みでOllama等から即試用できる。
+
+---
+
+### [自己進化エージェントでAI生成動画を検出する手法（WeVisForensics: Self-Evolving Agent for Omni AI-Generated Video Detection）](https://huggingface.co/papers/2611.21373)
+- **日付**: 2026-11-20（Daily Papers掲載日）
+- **ソース**: Hugging Face Daily Papers
+- **要約**:
+  1. AI生成動画検出のための自己進化エージェント手法WeVisForensicsが提案された。
+  2. 主調査エージェントが検査範囲を学習し専門エージェント群をDTPOで緩やかに更新する。
+  3. 先行手法を9.0%上回る95.2%の精度を達成、AI生成コンテンツ検知に直結する。
+
+---
+
+### [ロボット操作の認知と実行を診断するベンチマーク（Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation）](https://huggingface.co/papers/2611.26444)
+- **日付**: 2026-11-20（Daily Papers掲載日）
+- **ソース**: Hugging Face Daily Papers
+- **要約**:
+  1. ロボット操作を認知・実行・統合の3観点で診断するMind2Act Worldが提案された。
+  2. 最高性能のエージェントでもMind52.7%・Act39.0%に対しMind2Actは12.0%だった。
+  3. 個別能力の高さが統合タスクで機能しない実態を示し、評価設計の見直しに資する。
+
+---
+
 ## 2026-11-20
 
 ### [Claudeが量子重力理論の未解決問題2件を解決（Claude solves two open problems in the physics of black holes）](https://www.anthropic.com/research/claude-black-hole-physics)
