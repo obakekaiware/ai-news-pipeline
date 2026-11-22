@@ -2,6 +2,38 @@
 
 AIエンジニア目線で選んだ毎日のAIニュース（新しい順）
 
+## 2026-11-22
+
+### [Anthropicの数学者、「Claude」と共同で「リーマン予想」を証明したと主張 Leanコミュニティが「正しい」と認定](https://www.itmedia.co.jp/news/article/2611/22/2000003388/)
+- **日付**: 2026-11-22
+- **ソース**: ITmedia AI+
+- **要約**:
+  1. Anthropicの数学者が「Claude」と共同でリーマン予想の証明を発表し、Leanコミュニティが正しいと認定した。
+  2. 証明はLeanで記述された約1700万行の形式証明で、MITの数学者らが独立に再コンパイルして確認した。
+  3. 形式証明とAIの協働が未解決問題の証明に至った例で、数学研究でのAI活用の可能性を示す。
+
+---
+
+### [バグハンティング・レッドチーム向けClaude Codeスキル集を公開（elementalsouls/Claude-BugHunter）](https://github.com/elementalsouls/Claude-BugHunter)
+- **日付**: 不明
+- **ソース**: GitHub Trending
+- **要約**:
+  1. Claude Codeのバグハンティング・レッドチーム向けスキル集「Claude-BugHunter」が公開された。
+  2. 83個のスキルと681件のHackerOne開示レポートのパターンを備え、6段階のワークフローで脆弱性を検証する。
+  3. Claude Codeに脆弱性診断の実務知識を組み込む具体例で、セキュリティ診断の自動化に試す価値がある。
+
+---
+
+### [物理世界とAIをつなぐ：可視化で学ぶカメラ・座標系・運動制御入門](https://zenn.dev/turing_motors/articles/cea9e3c85611b2)
+- **日付**: 2026-11-16
+- **ソース**: Zenn トレンド
+- **要約**:
+  1. チューリング株式会社が、E2E自動運転AIの予測軌跡をカメラ映像に重ねる可視化手法を解説した。
+  2. ピンホールモデルによるカメラ・座標変換とPID・Pure Pursuit・MPCなど運動制御の基礎を整理している。
+  3. モデルの判断を現場で検証する際の可視化設計の参考になり、自動運転・ロボット開発者に実践的。
+
+---
+
 ## 2026-11-21
 
 ### [Thinking Machines Labの軽量新モデル「Inkling 2 Mini」公開（Inkling 2 Mini）](https://thinkingmachines.ai/news/inkling-2-mini/)
