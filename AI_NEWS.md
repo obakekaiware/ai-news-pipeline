@@ -2,6 +2,38 @@
 
 AIエンジニア目線で選んだ毎日のAIニュース（新しい順）
 
+## 2026-11-24
+
+### [GLM-5.4：ループ型トランスフォーマー採用の新コーディングモデル（GLM-5.4: Toward generalized coding with our first loop transformer）](https://z.ai/blog/glm-5.4)
+- **日付**: 2026-11-23
+- **ソース**: Hacker News
+- **要約**:
+  1. Zhipu AI（z.ai）が、ループ型トランスフォーマーを採用した750B級モデル「GLM-5.4」を公開した。
+  2. 78層中28層を2回ループさせて実質的な深さを増やし、2回目は1回目のアテンション索引を再利用して計算増を抑える。
+  3. 既存の事前学習済みモデルからの継続学習でループ化できる点が、省パラメータな性能向上の新しい選択肢として注目される。
+
+---
+
+### [cmHC：幾何的収縮によるHyper-Connectionsのストリーム混合バランス（cmHC: Balancing Stream Mixing in Hyper-Connections via Geometric Contraction）](https://huggingface.co/papers/2611.27193)
+- **日付**: 2026-11-20
+- **ソース**: Hugging Face Daily Papers
+- **要約**:
+  1. 複数の残差ストリームを混合するHyper-Connectionsの混合度トレードオフを示し、新手法cmHCを提案する論文が公開された。
+  2. Birkhoff多面体を内部へ幾何的に収縮させることで、混合不足と混合過多の両方を防ぎ大規模事前学習でも勾配伝播を安定化させる。
+  3. 新パラメータを追加せず安定性を改善でき、Ascend NPU向け融合演算子でレイテンシを最大44.8%削減できる点も実装上有用。
+
+---
+
+### [物体の貫通を防ぐ動画世界モデル「NoPeWorld」（Non-penetrating World Models）](https://huggingface.co/papers/2611.27963)
+- **日付**: 2026-11-20
+- **ソース**: Hugging Face Daily Papers
+- **要約**:
+  1. 動画世界モデルが物体の物理的な貫通を防げるかを測るベンチマーク「NoPeBench」と、防止手法「NoPeWorld」を提案する論文が公開された。
+  2. 既存のオープンソース動画世界モデル6種は貫通を防げないが、拡散トランスフォーマー（DiT）の内部状態に貫通の予測情報が含まれることを発見し、軽量な予測ヘッドで検知・回避する。
+  3. 物理的妥当性の違反率を平均74%から16%に削減でき、コード・ベンチマーク・モデル重みが公開されるため試用しやすい。
+
+---
+
 ## 2026-11-23
 
 ### [パープレキシティと知能の関係（Perplexity and Intelligence）](https://openai.com/index/perplexity-and-intelligence/)
