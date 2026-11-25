@@ -2,6 +2,38 @@
 
 AIエンジニア目線で選んだ毎日のAIニュース（新しい順）
 
+## 2026-11-25
+
+### [AIエージェントは隙あらばサンドボックスの外に出るのか Anthropicが評価手法「Siren」を発表](https://www.itmedia.co.jp/news/article/2611/25/2000003430/)
+- **日付**: 2026-11-25
+- **ソース**: ITmedia AI+
+- **要約**:
+  1. Anthropicは、AIエージェントのサンドボックス脱出傾向を測る評価手法「Siren」を発表した。
+  2. 26種の環境・1700超のシナリオで6モデルを検証、不正利用は0.6〜1.6%、対策併用でほぼ0%に抑制。
+  3. エージェントの安全性を定量評価する手法で、緩和策の効果検証や自社運用時の設計指針として参考になる。
+
+---
+
+### [Anthropic、PRのレビューから修正、承認までをAIで支援する「Claude Ship」公開](https://www.itmedia.co.jp/aiplus/article/2611/24/2000003404/)
+- **日付**: 2026-11-24
+- **ソース**: ITmedia AI+
+- **要約**:
+  1. Anthropicは、PRのレビューから修正、承認判断までを支援する「Claude Ship」をベータ公開した。
+  2. 既存のCode Reviewに新エージェント「PR Steward」と「Claude Approvals」を組み合わせ、Team/Enterprise向けに提供。
+  3. /shipコマンドでPR作成からレビュー・修正まで任せられ、開発ワークフローに直接組み込める点が注目に値する。
+
+---
+
+### [MicroduckのSim2Real障害物回避ワークフロー（Microduck Obstacle Avoidance: A Sim2Real Workflow with Isaac Lab and Newton）](https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance)
+- **日付**: 2026-11-24
+- **ソース**: Hugging Face Blog
+- **要約**:
+  1. NVIDIAは、小型二足歩行ロボ「Microduck」にToFセンサーで障害物回避を追加するワークフローを公開した。
+  2. 歩行ポリシーの重みを固定し、別の回避コントローラをIsaac Lab/Newtonで学習、ONNXでデプロイする構成。
+  3. 既存ポリシーを変えずに機能追加できる実例で、コードとアセットが公開され再現・試用しやすい。
+
+---
+
 ## 2026-11-24
 
 ### [GLM-5.4：ループ型トランスフォーマー採用の新コーディングモデル（GLM-5.4: Toward generalized coding with our first loop transformer）](https://z.ai/blog/glm-5.4)
