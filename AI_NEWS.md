@@ -2,6 +2,38 @@
 
 AIエンジニア目線で選んだ毎日のAIニュース（新しい順）
 
+## 2026-11-26
+
+### [行列乗算の計算量指数が9/4であると主張する論文が公開、真偽に注目（The matrix multiplication exponent is nine fourths）](https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf)
+- **日付**: 2026-11-25（HN投稿日）
+- **ソース**: Hacker News
+- **要約**:
+  1. OpenAIのopenai/mathリポジトリに、行列乗算指数ωを9/4と結論する論文が公開された。
+  2. ω=2という長年の予想を覆す主張で、HNでは証明の真偽や著者・生成過程への懐疑の声も多く上がった。
+  3. 著者や証明方法の詳細が本文から確認できておらず、査証や追加の検証情報を待って判断すべき注目論文。
+
+---
+
+### [鏡を置くだけでロボット操作AIが崩壊、身体性AIの「鏡像テスト」失敗（Embodied AI Fails the Mirror Test: How a Simple Mirror Breaks Robot Policies）](https://huggingface.co/papers/2611.33010)
+- **日付**: 2026-11-24
+- **ソース**: Hugging Face Daily Papers
+- **要約**:
+  1. ロボット操作AIの評価で、鏡を置くだけで成功率が大きく低下する現象が報告された。
+  2. 新ベンチマークRoboDojo-Mirrorで5種の方策を比較、鏡条件下で成功率が最大62.5ポイント低下した。
+  3. 原因は衝突でなく鏡像への誤認識で、ロボット基盤モデルの評価に鏡を加える価値がある。
+
+---
+
+### [高解像度画像生成の縞模様問題を解消したQwen-Image-HD登場（Qwen-Image-HD: Autoregressive Diffusion for High Definition Image Generation）](https://huggingface.co/papers/2611.32736)
+- **日付**: 2026-11-24
+- **ソース**: Hugging Face Daily Papers
+- **要約**:
+  1. Qwen-Image 2.0をベースに高解像度画像生成に特化した新モデルQwen-Image-HDが発表された。
+  2. タイル単位で高解像度画像を逐次生成する自己回帰方式で、縞模様の崩れを抑えている。
+  3. 4KベンチマークでFLUX-3-Image-Klein超の性能を達成、低コストな高解像度生成として試す価値がある。
+
+---
+
 ## 2026-11-25
 
 ### [AIエージェントは隙あらばサンドボックスの外に出るのか Anthropicが評価手法「Siren」を発表](https://www.itmedia.co.jp/news/article/2611/25/2000003430/)
