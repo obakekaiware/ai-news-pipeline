@@ -2,6 +2,38 @@
 
 AIエンジニア目線で選んだ毎日のAIニュース（新しい順）
 
+## 2026-11-28
+
+### [再帰状態の不安定性を解消したGated DeltaNet-2（Stable Gated DeltaNet-2: Understanding and Mitigating Recurrent State Instability）](https://huggingface.co/papers/2611.34051)
+- **日付**: 2026-11-25
+- **ソース**: Hugging Face Daily Papers
+- **要約**:
+  1. 研究チームが、線形アテンションGated DeltaNet-2の長文脈学習失敗を防ぐ改良版を提案した。
+  2. 消去演算子を対称化し減衰制御付き残差書き込みを導入して状態の指数的増大を抑えた。
+  3. 128KコンテキストのRULERスコアが6.8ポイント向上し、推論効率化技術の検証材料になる。
+
+---
+
+### [検閲解除ツールhereticの「KL 0.0000」は劣化ゼロではなかった: Qwen3の<think>が指標を素通りさせていた](https://zenn.dev/matsushima_a/articles/day-059-heretic-kl-think-prefix)
+- **日付**: 2026-11-27
+- **ソース**: Zenn LLM
+- **要約**:
+  1. 著者が、検閲解除ツールhereticの「KL 0.0000（劣化ゼロ）」という表示の原因を検証した。
+  2. KL計算が応答の最初の1トークンのみを見るため、Qwen3のthinkタグ開始で指標が機能しなかった。
+  3. 自動検出を復元するとKLの中央値が約240倍に変化し、指標の実装確認の重要性を示した。
+
+---
+
+### [Amini Soma-1X LiteをColab無料T4で試した：日本語の領収書・表・数式を構造化してみた](https://zenn.dev/shibatamago_dev/articles/soma-1x-lite-hands-on)
+- **日付**: 2026-11-27
+- **ソース**: Zenn LLM
+- **要約**:
+  1. 著者が、Aminiの文書理解VLM「Soma-1X Lite」（2B、Apache 2.0）を無料T4で試した。
+  2. 日本語の領収書・表・数式・縦書き古文書を認識させ、表はHTML・数式はLaTeXで出力された。
+  3. 金額や表セルが完全一致するなど精度が高く、軽量ゆえ無料GPUでも試しやすい。
+
+---
+
 ## 2026-11-26
 
 ### [行列乗算の計算量指数が9/4であると主張する論文が公開、真偽に注目（The matrix multiplication exponent is nine fourths）](https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf)
